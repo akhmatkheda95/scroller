@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -47,5 +48,20 @@
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, officia. Odio voluptates tempore vel soluta eum aliquam fugiat 
          ad omnis corporis dolor? Id mollitia quibusdam labore sit dignissimos quidem placeat!</p>
     </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+let moon = document.getElementById('moon');
+let mountains_behind = document.getElementById('mountains_behind');
+let text = document.getElementById('text');
+let btn = document.getElementById('btn');
+let mountains_front = document.getElementById('mountains_front');
+
+window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    stars.style.left = value * 0.25 + 'px';
+    // moon.style.left = value * 1.05 * 'px';
+})
+    </script>
 </body>
 </html>
